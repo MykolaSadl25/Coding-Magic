@@ -1,0 +1,31 @@
+
+
+.modal1 {
+    width: 576px;
+    height: 316px;
+    background-color: grey;
+    border-radius: 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+}
+
+.modal_close_btn {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+.modal1>p {
+    text-align: center;
+}
+
+.temperaryOpenBtn {
+    background-color: gold;
+     width: 50px;
+    height: 50px;
+}
+
+.your_name_wrong {
+    border-color: red;
+}
