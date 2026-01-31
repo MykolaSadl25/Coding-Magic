@@ -1,0 +1,89 @@
+.scientists {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__sortedList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: "Montserrat Alternates";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__box {
+    width: 150px;
+    height: 150px;
+    background-color: lightgray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+
+  &__box.show {
+    transform: scale(1) rotate(360deg);
+  }
+
+  &__boxes {
+    display: flex;
+    gap: 5px;
+  }
+  &__name {
+    font-family: "Montserrat Alternates";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+    color: #000;
+  }
+
+  &__wrap {
+    display: flex;
+    font-family: "Montserrat Alternates";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    color: #000;
+  }
+
+  
+
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+    row-gap: 20px;
+    column-gap: 36px;
+  }
+  &__desc{
+    font-family: "Montserrat Alternates";
+font-weight: 400;
+font-size: 12px;
+text-align: right;
+color: #fff;
+border-radius: 20px;
+padding: 10px 20px;
+box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+background: #000;
+border: none;
+transition: transform 0.2s ease;
+&:active{
+    transform: scale(1.2);
+}
+  }
+}

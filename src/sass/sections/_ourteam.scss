@@ -1,6 +1,7 @@
 .team {
   padding-top: 40px;
   padding-bottom: 40px;
+  position: relative;
 
   &__btn-left {
     border: none;
@@ -8,6 +9,12 @@
     position: absolute;
     top: 150px;
     left: 500px;
+    stroke-width: 1px;
+    stroke: #000;
+    transition: transform 0.2s ease;
+&:active{
+    transform: scale(1.2);
+}
   }
 
   &__btn-right {
@@ -16,6 +23,12 @@
     position: absolute;
     top: 150px;
     right: 500px;
+    transition: transform 0.2s ease;
+    stroke-width: 1px;
+stroke: #000;
+&:active{
+    transform: scale(1.2);
+}
   }
 
   &__icon {

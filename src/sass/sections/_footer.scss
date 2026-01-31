@@ -1,0 +1,78 @@
+.footer{
+    padding-top: 62px;
+    padding-bottom: 62px;
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__icon{
+        width: 165px;
+        height: 70px;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__link{
+        color: #000000;
+        font-weight: 400;
+font-size: 14px;
+line-height: 170%;
+position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  opacity: 0;
+      transition-property: opacity;
+      transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 300ms;
+    }
+    &:hover::after {
+    display: block;
+    opacity: 1;
+  }
+
+}
+
+    &__form{
+        display: flex;
+        gap: 30px;
+    }
+
+    &__input{
+        background-color: #D7D7D7;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 20px;
+        &:focus{
+            outline: none;
+        }
+    }
+    
+    &__btn{
+        color: #FFFFFF;
+        background-color: #000000;
+        border-radius: 20px;
+        border: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: transform 0.2s ease;
+&:active{
+    transform: scale(1.2);
+}
+    }
+}
