@@ -42,6 +42,255 @@ hr {
   outline: 1px solid cyan;
 }
 
+.year__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.year__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 36px;
+}
+@media screen and (min-width: 1090px) {
+  .year__title {
+    font-size: 16px;
+  }
+}
+.year__form {
+  width: 155px;
+  height: 35px;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+}
+@media screen and (min-width: 768px) {
+  .year__form {
+    width: 168px;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .year__form {
+    width: 215px;
+  }
+}
+.year__input {
+  height: 35px;
+  display: inline-flex;
+  padding: 10px 10px 10px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12.5px;
+  border-radius: 20px;
+  background: #D7D7D7;
+  border: none;
+  position: relative;
+  text-overflow: ellipsis;
+  font-family: "Montserrat Alternates";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .year__input {
+    width: 170px;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .year__input {
+    width: 238px;
+    font-size: 12px;
+    padding: 10px 45px 10px 10px;
+  }
+}
+.year__button {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 0px 20px 20px 0px;
+  background: #000;
+  border: none;
+  position: absolute;
+  left: 94%;
+  top: 0px;
+  transition-duration: 250ms;
+}
+.year__svg {
+  width: 15px;
+  height: 15px;
+  fill: white;
+  transition-duration: 250ms;
+}
+.year__button:hover {
+  transition-duration: 250ms;
+  background-color: #8ACECF;
+}
+.year__button:hover .year__svg {
+  transition-duration: 250ms;
+  fill: black;
+}
+.year__content {
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .year__content {
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .year__content {
+    gap: 149px;
+  }
+}
+.year__line {
+  width: 350px;
+  height: 2px;
+  flex-shrink: 0;
+  stroke-width: 3px;
+  background-color: #000;
+}
+@media screen and (min-width: 1090px) {
+  .year__line {
+    width: 536px;
+  }
+}
+.year__result {
+  width: 231px;
+  display: inline-flex;
+  color: #039900;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  visibility: hidden;
+}
+
+.time-calc__box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.time-calc__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .time-calc__title {
+    font-size: 16px;
+    margin-bottom: 36px;
+  }
+}
+.time-calc__content {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  gap: 33px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1090px) {
+  .time-calc__content {
+    margin-bottom: 36px;
+  }
+}
+.time-calc__equal-line {
+  width: 75px;
+  border: dashed 1px;
+  height: 0px;
+  flex-shrink: 0;
+}
+@media screen and (min-width: 1090px) {
+  .time-calc__equal-line {
+    width: 100px;
+  }
+}
+.time-calc__form {
+  width: 150px;
+  height: 35px;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+}
+.time-calc__input {
+  width: 156px;
+  height: 35px;
+  display: inline-flex;
+  padding: 10px 45px 10px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: #d7d7d7;
+  border: none;
+  position: relative;
+}
+.time-calc__button {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 0px 20px 20px 0px;
+  background: #000;
+  border: none;
+  position: absolute;
+  left: 81%;
+  top: 0px;
+}
+.time-calc__svg {
+  width: 15px;
+  height: 15px;
+  fill: white;
+}
+.time-calc__line {
+  width: 350px;
+  height: 2px;
+  flex-shrink: 0;
+  stroke-width: 3px;
+  background-color: #000;
+  margin-top: 36px;
+}
+@media screen and (min-width: 768px) {
+  .time-calc__line {
+    width: 536px;
+  }
+}
+.time-calc__button:hover {
+  transition-duration: 250ms;
+  background-color: #8ACECF;
+}
+.time-calc__button:hover .time-calc__svg {
+  transition-duration: 250ms;
+  fill: black;
+}
+.time-calc__text {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.04px;
+}
+
 .team {
   padding-top: 40px;
   padding-bottom: 40px;
