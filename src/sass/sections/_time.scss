@@ -1,0 +1,112 @@
+.time-calc {
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  &__title {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 36px;
+  }
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    gap: 33px;
+    margin-bottom: 16px;
+    @media screen and (min-width: 1090px) {
+      margin-bottom: 36px;
+  }
+  }
+
+  &__equal-line{
+    width: 75px;
+    border: dashed 1px;
+height: 0px;
+flex-shrink: 0;
+@media screen and (min-width: 1090px) {
+  width: 100px;
+}
+  }
+  &__form {
+    width: 150px;
+    height: 35px;
+    flex-shrink: 0;
+    filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+  }
+
+  &__input {
+    width: 156px;
+    height: 35px;
+    display: inline-flex;
+    padding: 10px 45px 10px 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: #d7d7d7;
+    border: none;
+    position: relative;
+  }
+
+  &__button {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 0px 20px 20px 0px;
+    background: #000;
+    border: none;
+    position: absolute;
+    left: 81%;
+    top: 0px;
+  }
+
+  &__svg {
+    width: 15px;
+    height: 15px;
+    fill: white;
+  }
+
+  &__line{
+    width: 350px;
+    height: 2px;
+flex-shrink: 0;
+stroke-width: 3px;
+background-color: #000;
+margin-top: 36px;
+@media screen and (min-width: 768px) {
+  width: 536px;
+}
+}
+
+&__button:hover{
+  transition-duration: 250ms;
+  background-color: #8ACECF;
+}
+
+&__button:hover &__svg{
+  transition-duration: 250ms;
+  fill: black;
+}
+
+&__text{
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.04px;
+}
+}
