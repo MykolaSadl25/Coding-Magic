@@ -1,31 +1,91 @@
 
+.modal_overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .modal1 {
-    width: 576px;
-    height: 316px;
-    background-color: grey;
-    border-radius: 20px;
-    display: none;
-    position: fixed;
-    top: 0;
+  width: 576px;
+  height: 316px;
+  background-color: gray;
+  border-radius: 20px;
+  display: none;
+  position: fixed;
+  top: 60px;
+  padding: 46px 0px;
+  font-family: Inter;
+  font-size: 12px;
+
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal_close_btn {
-    width: 50px;
-    height: 50px;
-    background-color: black;
+  position: absolute;
+  top: 30px;
+  left: 531px;
+  width: 15px;
+  height: 15px;
 }
 
-.modal1>p {
-    text-align: center;
+.modal1 p {
+  text-align: center;
 }
 
-.temperaryOpenBtn {
-    background-color: gold;
-     width: 50px;
-    height: 50px;
+.modal1 p:nth-child(3) {
+  margin-top: 42px;
 }
 
 .your_name_wrong {
-    border-color: red;
+  border-color: red;
+}
+
+.your_name {
+  margin-top: 18px;
+  width: 169px;
+  height: 35px;
+  border-radius: 20px;
+
+  padding: 8px;
+
+  background-color: #d7d7d7;
+  border: none;
+  color: #7E7E7E;
+}
+
+#modal_icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.save_name_btn {
+  background-color: black;
+  width: 105px;
+  height: 35px;
+  color: white;
+  margin-top: 18px;
+
+  border-radius: 20px;
+}
+
+.modal_icon1 {
+    top: 154px;
+    left: 41px;
+}
+
+.modal_icon2 {
+    top: 230px;
+    left: 85px;
+}
+
+.modal_icon3 {
+    top: 154px;
+    left: 505px;
+}
+
+.modal_icon4 {
+    top: 230px;
+    left: 461px;
 }
