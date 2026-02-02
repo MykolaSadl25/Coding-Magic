@@ -6,8 +6,8 @@ const inputNameEl = document.querySelector(".your_name")
 const saveNameEl = document.querySelector(".save_name_btn")
 
 
-openBtnEl.addEventListener("click", () => {
-    modal1El.style.display = "block"
+document.addEventListener("DOMContentLoaded", () => {
+    modal1El.style.display = "flex"
 })
 
 closeBtnEl.addEventListener("click", () => {
