@@ -1,139 +1,108 @@
-.year{
-    &__box{
+.year {
+  &__box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
-    &__title{
-        color: #000;
-font-family: "Montserrat Alternates";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 36px;
-@media screen and (min-width: 1090px) {
-    font-size: 16px;
-}
-    }
-    &__form{
-        width: 155px;
-height: 35px;
-flex-shrink: 0;
-filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
-@media screen and (min-width: 768px) {
-    width: 168px;
-}
-@media screen and (min-width: 1090px) {
-    width: 215px;
-}
-
-    }
-
-    &__input{
-        height: 35px;
-        
-        display: inline-flex;
-        padding: 10px 10px 10px 10px;
-        align-items: flex-start;
-        gap: 10px;
-        font-size: 12.5px;
-border-radius: 20px;
-background: #D7D7D7;
-border:none;
-position: relative;
-text-overflow: ellipsis;
-font-family: "Montserrat Alternates";
-    font-size: 11px;
+  }
+  &__title {
+    color: #000;
+    font-family: 'Montserrat Alternates';
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-@media screen and (min-width: 768px) {
-    width: 170px;
+    margin-bottom: 36px;
+    font-size: 16px;
+  }
+  &__form {
+    height: 35px;
+    flex-shrink: 0;
+    filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+    width: 215px;
+  }
+
+  &__input {
+    height: 35px;
+
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 12.5px;
+    border-radius: 20px;
+    background: #d7d7d7;
+    border: none;
+    position: relative;
     text-overflow: ellipsis;
-}
-@media screen and (min-width: 1090px) {
-    width: 238px;
-    font-size: 12px;
-    padding: 10px 45px 10px 10px;
-    
-}
-    }
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+      width: 238px;
+      font-size: 12px;
+      padding: 10px 45px 10px 10px;
 
-    &__button{
-        width: 35px;
-        height: 35px;
-        display: inline-flex;
-padding: 10px;
-align-items: flex-start;
-gap: 10px;
-border-radius: 0px 20px 20px 0px;
-background: #000;
-border: none;
-position: absolute;
-left: 94%;
-top: 0px;
-transition-duration: 250ms;
-    }
+  }
 
-    &__svg{
-        width: 15px;
-height: 15px;
-fill: white;
-transition-duration: 250ms;
-    }
+  &__button {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 0px 20px 20px 0px;
+    background: #000;
+    border: none;
+    position: absolute;
+    left: 94%;
+    top: 0px;
+    transition-duration: 250ms;
+  }
 
-    &__button:hover{
-        transition-duration: 250ms;
-        background-color: #8ACECF;
-    }
+  &__svg {
+    width: 15px;
+    height: 15px;
+    fill: white;
+    transition-duration: 250ms;
+  }
 
-    &__button:hover &__svg{
-        transition-duration: 250ms;
-        fill: black;
-    }
+  &__button:hover {
+    transition-duration: 250ms;
+    background-color: #8acecf;
+  }
 
-    &__content{
-        display: flex;
-        flex-direction: column;
-        gap: 49px;
-        align-items: center;
-        margin-bottom: 16px;
-        @media screen and (min-width: 768px) {
-            align-items: flex-start;
-            flex-direction: row;
-            margin-bottom: 36px;
-        }
-        @media screen and (min-width: 1090px) {
-            
-            gap: 149px;
-            
-            
-        }
-        
-    }
+  &__button:hover &__svg {
+    transition-duration: 250ms;
+    fill: black;
+  }
 
-    &__line{
-        width: 350px;
-        height: 2px;
-flex-shrink: 0;
-stroke-width: 3px;
-background-color: #000;
-@media screen and (min-width: 1090px) {
+  &__content {
+    display: flex;
+      flex-direction: row;
+    align-items: center;
+    margin-bottom: 36px;
+          align-items: flex-start;
+      gap: 149px;
+
+  }
+
+  &__line {
     width: 536px;
-}
-    }
+    height: 2px;
+    flex-shrink: 0;
+    stroke-width: 3px;
+    background-color: #000;
+  }
 
-   &__result{
+  &__result {
     width: 231px;
     display: inline-flex;
     color: #039900;
-text-align: right;
-font-family: "Montserrat Alternates";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-visibility: hidden;
-   }
+    text-align: right;
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    visibility: hidden;
+  }
 }

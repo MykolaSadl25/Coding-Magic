@@ -8,35 +8,31 @@
   &__title {
     color: #000;
     font-family: "Montserrat Alternates";
-    font-size: 14px;
+    // font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 16px;
-    @media screen and (min-width: 768px) {
+    // margin-bottom: 16px;
+
       font-size: 16px;
       margin-bottom: 36px;
-  }
   }
   &__content{
     display: flex;
     align-items: center;
     height: 35px;
     gap: 33px;
-    margin-bottom: 16px;
-    @media screen and (min-width: 1090px) {
+    // margin-bottom: 16px;
       margin-bottom: 36px;
-  }
+
   }
 
   &__equal-line{
-    width: 75px;
+    // width: 75px;
     border: dashed 1px;
 height: 0px;
 flex-shrink: 0;
-@media screen and (min-width: 1090px) {
   width: 100px;
-}
   }
   &__form {
     width: 150px;
@@ -80,15 +76,15 @@ flex-shrink: 0;
   }
 
   &__line{
-    width: 350px;
+    // width: 350px;
     height: 2px;
 flex-shrink: 0;
 stroke-width: 3px;
 background-color: #000;
 margin-top: 36px;
-@media screen and (min-width: 768px) {
+
   width: 536px;
-}
+
 }
 
 &__button:hover{
