@@ -247,6 +247,37 @@ hr {
   line-height: 20.04px;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#arena {
+  position: relative;
+  width: 720px;
+  height: 220px;
+  border-radius: 37px;
+  border: 2px solid #000;
+  background: #5ABB58;
+  overflow: hidden;
+  padding: 80px, 175px, 220px, 175;
+}
+
+#ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: left 0.3s ease, top 0.3s ease;
+}
+
 .team {
   padding-top: 40px;
   padding-bottom: 40px;
