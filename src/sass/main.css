@@ -28,18 +28,38 @@ body {
 }
 
 hr {
-  color: #000000;
-  width: 536px;
+  color: black;
+  width: 250px;
   height: 1px;
+}
+@media screen and (min-width: 768px) {
+  hr {
+    width: 536px;
+  }
 }
 
 .container {
-  width: 1090px;
+  max-width: 1090px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid cyan;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .container {
+    width: 1090px;
+  }
 }
 
 .year__box {
@@ -237,31 +257,51 @@ hr {
   background-color: transparent;
   position: absolute;
   top: 150px;
-  left: 500px;
+  left: 3px;
   stroke-width: 1px;
-  stroke: #000;
+  stroke: #000000;
   transition: transform 0.2s ease;
 }
 .team__btn-left:active {
   transform: scale(1.2);
+}
+@media screen and (min-width: 768px) {
+  .team__btn-left {
+    left: 200px;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .team__btn-left {
+    left: 500px;
+  }
 }
 .team__btn-right {
   border: none;
   background-color: transparent;
   position: absolute;
   top: 150px;
-  right: 500px;
+  right: 3px;
   transition: transform 0.2s ease;
   stroke-width: 1px;
-  stroke: #000;
+  stroke: #000000;
 }
 .team__btn-right:active {
   transform: scale(1.2);
 }
+@media screen and (min-width: 768px) {
+  .team__btn-right {
+    right: 200px;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .team__btn-right {
+    right: 500px;
+  }
+}
 .team__icon {
   width: 50px;
   height: 100px;
-  color: black;
+  color: #000000;
 }
 .team__title {
   font-family: "Montserrat Alternates";
@@ -303,6 +343,7 @@ hr {
   line-height: 1;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #000000;
 }
 
 .scientists {
@@ -503,8 +544,24 @@ hr {
 }
 .footer__wrap {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    flex-wrap: wrap;
+    flex-direction: row;
+    -moz-column-gap: 260px;
+         column-gap: 260px;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .footer__wrap {
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
 }
 .footer__icon {
   width: 165px;
@@ -541,9 +598,27 @@ hr {
   display: block;
   opacity: 1;
 }
+@media screen and (min-width: 768px) {
+  .footer__box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .footer__box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .footer__form {
   display: flex;
   gap: 30px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__form {
+    flex-direction: row;
+  }
 }
 .footer__input {
   background-color: #d7d7d7;
