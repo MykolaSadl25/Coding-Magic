@@ -247,12 +247,18 @@ hr {
   line-height: 20.04px;
 }
 
-body {
-  margin: 0;
+.football__box {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+.football__title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 #arena {
@@ -263,7 +269,7 @@ body {
   border: 2px solid #000;
   background: #5ABB58;
   overflow: hidden;
-  padding: 80px, 175px, 220px, 175;
+  padding: 80px 175px 220px 175px;
 }
 
 #ball {
