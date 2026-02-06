@@ -3,22 +3,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  visibility: hidden;
 }
 
 .modal1 {
   width: 576px;
   height: 316px;
-  background-color: gray;
+  background-color: #FFFFFF;
   border-radius: 20px;
-  display: none;
-  position: fixed;
-  top: 60px;
+  display: flex;
+  
+  position: absolute;
+  top: 30%;
   padding: 46px 0px;
   font-family: Inter;
   font-size: 12px;
+  visibility: hidden;
 
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .modal_close_btn {
@@ -54,7 +64,7 @@
   color: #7E7E7E;
 }
 
-#modal_icon {
+.modal_icon {
   position: absolute;
   width: 30px;
   height: 30px;

@@ -1,21 +1,65 @@
 .modal2 {
-    width: 463px;
-    height: 245px;
-    background-color: grey;
-    border-radius: 20px;
-    display: none;
-    position: fixed;
-    top: 20%;
+  width: 463px;
+  height: 245px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  top: 30%;
+align-items: center;
+justify-content: center;
+
+  z-index: 1;
 }
 
-.temperaryOpenBtn2 {
-    width: 50px;
-    height: 50px;
-    background-color: brown;
+.modal2 h3 {
+    
+    font-family: Inter;
+    font-size: 20px;
+  
 }
 
 .modal2_close_btn {
-    width: 50px;
-    height: 50px;
-    background-color: brown;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 15px;
+  height: 15px;
 }
+
+.modal_icon1_2 {
+    top: 69px;
+    left: 43px;
+}
+
+.modal_icon2_2 {
+    top: 145px;
+    left: 87px;
+}
+
+.modal_icon3_2 {
+    top: 69px;
+    left: 391px;
+}
+
+.modal_icon4_2 {
+    top: 145px;
+    left: 347px;
+}
+
+
+
+.modal_overlay2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  visibility: hidden;
+}
+
