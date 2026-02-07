@@ -25,7 +25,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <script type="module" crossorigin src="/Coding-Magic/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Coding-Magic/assets/index-e28c2e20.css">
+    <link rel="stylesheet" href="/Coding-Magic/assets/index-d922a729.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -113,8 +113,11 @@
     <section class="football">
   <div class="container">
     <h2 class="football__title">Футбол</h2>
+    <div id="ui">Goals: <span id="score">0</span></div>
     <div class="football__box">
       <div id="arena">
+        <div class="goal left"></div>
+      <div class="goal right"></div>
     <div id="ball"><img src="data:image/png;base64,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" alt=""></div>
   </div>
     </div>
@@ -128,7 +131,7 @@
     <h3 class="the_bigest_number">Найбільше число, яке ви ввели - (число)</h3>
     <section class="team" data-aos="fade-up">
   <div class="container">
-    <hr />
+    <div class="line"></div>
     <h2 class="team__title">Наша команда</h2>
     <button type="button" class="team__btn-left">
       <svg class="team__icon">
@@ -139,48 +142,54 @@
       <ul class="team__list">
         <li class="team__item">
           <img
-            src="https://cdn.openart.ai/stable_diffusion/a7a1a62d32acb405bfc2f2bb2cacf0f7678c838a_2000x2000.webp"
-            alt=""
+            src="/Coding-Magic/assets/mykola-9a3beeb0.jpg"
+            alt="Mykola Sadlii"
             class="team__img"
           />
           <h2 class="team__name">Микола Садлій</h2>
-          <p class="team__desc">Team Lead</p>
+          <p class="team__desc">Team Lead,розробив секції team,scientists,footer</p>
         </li>
         <li class="team__item">
           <img
             src="/Coding-Magic/assets/olena-9a8b3232.jpg"
-            alt=""
+            alt="Olena Marynenko"
             class="team__img"
           />
           <h2 class="team__name">Олена Мариненко</h2>
-          <p class="team__desc">Scrum Master</p>
+          <p class="team__desc">Scrum Master, розробила секції calculator, time calculator,</p>
         </li>
         <li class="team__item">
           <img
-            src="https://static.displate.com/857x1200/displate/2024-10-16/d15f5b6f-796b-4c9b-9c92-8556d775de1e.jpg"
-            alt=""
+            src="/Coding-Magic/assets/karina-d8045d56.jpg"
+            alt="Karina Velmushkina"
             class="team__img"
           />
           <h2 class="team__name">Каріна Вельмушкіна</h2>
-          <p class="team__desc">Developer</p>
+          <p class="team__desc">Developer, розробила секції modals, Rock paper scissors, biggest number</p>
         </li>
         <li class="team__item">
           <img
-            src="https://images.wallpapersden.com/image/download/asus-rog-logo_bGlsa2uUmZqaraWkpJRoZWWtaGVl.jpg"
-            alt=""
+            src="/Coding-Magic/assets/lev-e8ff6aa0.jpg"
+            alt="Lev Plotnyk"
             class="team__img"
           />
           <h2 class="team__name">Лев Плотник</h2>
-          <p class="team__desc">Developer</p>
+          <p class="team__desc">Developer, розробив секції football, header, google dino</p>
         </li>
       </ul>
     </div>
+    <ul class="team__slider-dots">
+  <li class="team__dot active"></li>
+  <li class="team__dot"></li>
+  <li class="team__dot"></li>
+  <li class="team__dot"></li>
+</ul>
     <button type="button" class="team__btn-right">
       <svg class="team__icon">
         <use href="/Coding-Magic/assets/symbol-defs2-53dd8dca.svg#icon-arrowRight"></use>
       </svg>
     </button>
-    <hr />
+      <div class="line" style="margin-top: 30px; margin-bottom: 0px;"></div>
   </div>
 </section>
 
