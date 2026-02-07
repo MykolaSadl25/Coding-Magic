@@ -2,6 +2,7 @@ const listRef = document.querySelector(".team__list");
 const itemRef = document.querySelectorAll(".team__item");
 const btnLeftRef = document.querySelector(".team__btn-left");
 const btnRightRef = document.querySelector(".team__btn-right");
+const dotsRef = document.querySelectorAll(".team__dot");
 
 //ArrowLeft
 //ArrowRight
@@ -19,9 +20,6 @@ window.addEventListener("keydown", (event) => {
       if (index === itemRef.length) {
         index = 0;
         moveSlider();
-        console.log(index);
-        console.log(itemRef.length);
-        console.log("hello");
       }
     }
   }
@@ -48,4 +46,8 @@ btnLeftRef.addEventListener("click", () => {
 function moveSlider() {
   const update = -index * 100;
   listRef.style.transform = `translateX(${update}%)`;
+  dotsRef.forEach(dot => dot.classList.remove("active"));
+  if(dotsRef[index]) {
+    dotsRef[index].classList.add("active");
+  }
 }

@@ -91,10 +91,35 @@
   &__name {
     font-family: 'Montserrat Alternates';
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1;
     margin-top: 20px;
     margin-bottom: 20px;
     color: variables.$team-title-col;
   }
+
+  &__desc{
+    font-family: 'Montserrat Alternates';
+font-weight: 400;
+font-size: 14px;
+color: variables.$team-title-col;
+  }
+
+  &__slider-dots{
+    display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  }
+
+  &__dot{
+    width: 18px;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 2px;
+  }
+}
+.team__dot.active{
+  width: 30px;
+  background-color: #555;
 }
