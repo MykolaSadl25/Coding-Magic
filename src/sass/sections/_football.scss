@@ -1,4 +1,7 @@
-
+.football{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .football__box{
   display: flex;
   justify-content: center;
@@ -11,6 +14,12 @@ font-size: 16px;
 color: #000;
 text-align: center;
 margin-bottom: 40px;
+}
+
+#ui {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 #arena {
@@ -28,10 +37,25 @@ margin-bottom: 40px;
   position: absolute;
   width: 30px;
   height: 30px;
-  background: red;
   border-radius: 50%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   transition: left 0.3s ease, top 0.3s ease;
+}
+.goal {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 80px;
+  background: gold;
+  transform: translateY(-50%);
+}
+
+.goal.left {
+  left: 0;
+}
+
+.goal.right {
+  right: 0;
 }

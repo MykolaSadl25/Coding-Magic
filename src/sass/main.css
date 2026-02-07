@@ -27,13 +27,16 @@ body {
   font-family: "Montserrat Alternates";
 }
 
-hr {
-  color: black;
+.line {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  background-color: #000;
   width: 250px;
-  height: 1px;
+  height: 2px;
 }
 @media screen and (min-width: 768px) {
-  hr {
+  .line {
     width: 536px;
   }
 }
@@ -247,6 +250,11 @@ hr {
   line-height: 20.04px;
 }
 
+.football {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .football__box {
   display: flex;
   justify-content: center;
@@ -259,6 +267,12 @@ hr {
   color: #000;
   text-align: center;
   margin-bottom: 40px;
+}
+
+#ui {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 #arena {
@@ -276,12 +290,28 @@ hr {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: red;
   border-radius: 50%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   transition: left 0.3s ease, top 0.3s ease;
+}
+
+.goal {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 80px;
+  background: gold;
+  transform: translateY(-50%);
+}
+
+.goal.left {
+  left: 0;
+}
+
+.goal.right {
+  right: 0;
 }
 
 .team {
@@ -376,11 +406,34 @@ hr {
 .team__name {
   font-family: "Montserrat Alternates";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #000000;
+}
+.team__desc {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+.team__slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+}
+.team__dot {
+  width: 18px;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+
+.team__dot.active {
+  width: 30px;
+  background-color: #555;
 }
 
 .scientists {
