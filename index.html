@@ -25,7 +25,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <script type="module" crossorigin src="/Coding-Magic/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Coding-Magic/assets/index-556c4ae5.css">
+    <link rel="stylesheet" href="/Coding-Magic/assets/index-47ea2455.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -65,7 +65,36 @@
         </div>
     </div>
 </section>
+    <div class="rsp container">
+<h3>Камінь - ножиці - папір</h3>
+<div class="div_rsp">
+    <div class="btn_rsp" data-value="rock">
+          <svg class="icon_rsp">
+                <use href="../img/symbol-defs2.svg#stone1"></use>
+            </svg>
+    </div>
+    <div class="btn_rsp" data-value="scissors">
+          <svg class="icon_rsp">
+                <use href="../img/symbol-defs2.svg#scissors1"></use>
+            </svg>
+    </div>
+    <div class="btn_rsp" data-value="paper">
+          <svg class="icon_rsp">
+                <use href="../img/symbol-defs2.svg#paper1"></use>
+            </svg>
+    </div>
+</div>
+<div class="text_rsp">
     
+    <p>Рахунок:</p>
+    <p class="winCounter">Ви - 0</p>
+    <p class="loseCounter">Комп’ютер - 0</p>
+</div>
+
+<p class="whowin_p">Ви виграли раунд!</p>
+<button class="comp_btn">Варіант комп’ютера</button>
+
+</div>
     <section  id="numbers" class="calculator">
     <div class="line"></div>
     <div class="container calculator__container">
@@ -123,11 +152,30 @@
   </div>
 </section>
 
-     <h2>Введіть 3 числа</h2>
-    <input type="text" placeholder="Введіть число" class="biggest_number" data-index="0">
-    <input type="text" placeholder="Введіть число" class="biggest_number" data-index="1">
-    <input type="text" placeholder="Введіть число" class="biggest_number" data-index="2">
-    <h3 class="the_bigest_number">Найбільше число, яке ви ввели - (число)</h3>
+    <div class="container biggest_numbers">
+  <h2>Введіть 3 числа</h2>
+  <div class="input_divs_bn">
+    <input
+      type="text"
+      placeholder="Введіть число"
+      class="biggest_number"
+      data-index="0"
+    />
+    <input
+      type="text"
+      placeholder="Введіть число"
+      class="biggest_number"
+      data-index="1"
+    />
+    <input
+      type="text"
+      placeholder="Введіть число"
+      class="biggest_number"
+      data-index="2"
+    />
+  </div>
+  <h3 class="the_bigest_number">Найбільше число, яке ви ввели - (число)</h3>
+</div>
     <section class="team" data-aos="fade-up">
   <div class="container">
     <div class="line"></div>
