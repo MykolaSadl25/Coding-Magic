@@ -1,59 +1,8 @@
-// .quess {
-//     &__container {
-//     display: flex;
-//     align-items: center;
-//     flex-direction: column;
-//     }
 
-//  &__text{
-//     color: #000;
-// font-family: "Montserrat Alternates";
-// font-size: 16px;
-// font-style: normal;
-// font-weight: 400;
-// line-height: normal;
-// margin-top: 36px;
-// margin-bottom: 36px;
-//  }
-
-//  &__form{
-//     display: inline-flex;
-// padding: 10px 45px 10px 10px;
-// align-items: flex-start;
-// gap: 10px;
-// border-radius: 20px;
-// background: #D7D7D7;
-// margin-bottom: 36px;
-//  }
-
-//  &__input{
-//     border: none;
-//     background: #D7D7D7;
-//  }
-//  &__button{
-//     background: #000;
-//     border: none;
-//  }
-
-//   &__svg {
-//     width: 15px;
-//     height: 15px;
-//     fill: white;
-//   }
-// }
-
-// //     // width: 156px;
-// //     // height: 35px;
-// //     // display: inline-flex;
-// //     // padding: 10px 45px 10px 10px;
-// //     // align-items: flex-start;
-// //     // gap: 10px;
-// //     // border-radius: 20px;
-// //     // background: #d7d7d7;
-// //     // border: none;
-// //     // position: relative;
 
 .quess {
+      margin-top: 36px;
+      margin-bottom: 36px;
   &__container {
     display: flex;
     flex-direction: column;

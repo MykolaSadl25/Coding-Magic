@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   text-decoration: none;
 }
@@ -69,6 +70,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 36px;
 }
 .year__title {
   color: #000;
@@ -78,6 +80,7 @@ body {
   line-height: normal;
   margin-bottom: 36px;
   font-size: 16px;
+  margin-top: 36px;
 }
 .year__form {
   height: 35px;
@@ -145,7 +148,7 @@ body {
   width: 536px;
   height: 2px;
   flex-shrink: 0;
-  stroke-width: 3px;
+  stroke-width: 1px;
   background-color: #000;
 }
 .year__result {
@@ -161,6 +164,10 @@ body {
   visibility: hidden;
 }
 
+.quess {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
 .quess__container {
   display: flex;
   flex-direction: column;
@@ -303,6 +310,9 @@ body {
 
 .calculator {
   padding: 50px 0;
+  display: flex;
+  flex-direction: column; /* Добавьте это, чтобы элементы шли сверху вниз */
+  align-items: center; /* Центрирует заголовок и контент */
   text-align: center;
 }
 .calculator__title {
@@ -310,13 +320,15 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
+  margin-top: 36px;
 }
 .calculator__content {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 38px;
+  margin-bottom: 36px;
 }
 .calculator__input {
   width: 135px;
@@ -379,6 +391,13 @@ body {
   cursor: pointer;
 }
 
+.year__line {
+  max-width: 536px;
+  height: 1px;
+  background-color: #000;
+  margin: 0 auto;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -398,6 +417,7 @@ input::-webkit-inner-spin-button {
   line-height: normal;
   font-size: 16px;
   margin-bottom: 36px;
+  margin-top: 36px;
 }
 .time-calc__content {
   display: flex;
