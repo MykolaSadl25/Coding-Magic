@@ -1,0 +1,79 @@
+.btn_rsp {
+    width: 60px;
+    height: 60px;
+    background-color: #000000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: #8e8e8e;
+    }
+}
+
+.icon_rsp {
+    width: 40px;
+    height: 40px;
+    fill: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_rsp {
+    display: flex;
+    gap: 38px;
+    justify-content: center;
+}
+
+.rsp {
+    position: relative;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    height: 300px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.rsp h3 {
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.text_rsp {
+    text-align: left;
+    position: absolute;
+    top: 92px;
+    right: 200px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
+}
+
+.whowin_p {
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.comp_btn {
+    width: 182px;
+    height: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+
+    font-size: 12px;
+    background-color: #000000;
+    color: white;
+
+
+}
