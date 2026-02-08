@@ -1,18 +1,40 @@
-<section  id="numbers" class="calculator">
-    <div class="line"></div>
+<!-- <section  id="numbers" class="calculator">
     <div class="container calculator__container">
         <h2 class="calculator__title">Калькулятор</h2>
         <div class="calculator__div">
-            <input type="text" class="calculator__input1" placeholder="Введіть число">
-            <div class="calculator__button-div">
-                <button class="calculator__button" id="button1">+</button>
-                <button class="calculator__button" id="button2">*</button>
-                <button class="calculator__button" id="button3">-</button>
-                <button class="calculator__button" id="button4">/</button>
-            </div>
-            <input type="text" class="calculator__input2" placeholder="Введіть число">
+            <input type="number" class="calculator__input1" placeholder="Введіть число">
+            <ul class="calculator__button-div">
+                <li><button class="calculator__button" id="button1">+</button></li>
+                <li><button class="calculator__button" id="button2">*</button></li>
+                <li><button class="calculator__button" id="button3">-</button></li>
+                <li><button class="calculator__button" id="button4">/</button></li>
+            </ul>
+            <input type="number" class="calculator__input2" placeholder="Введіть число">
             <button class="calculator__equals">=</button>
-            <input type="text" class="calculator__input3" placeholder="Результат">
+            <input type="number" class="calculator__input3" placeholder="Результат">
+        </div>
+    </div>
+</section> -->
+
+
+<section id="numbers" class="calculator">
+    <div class="container calculator__container">
+        <h2 class="calculator__title">Калькулятор</h2>
+        <div class="calculator__content"> <input type="number" class="calculator__input" placeholder="Введіть число">
+
+            <ul class="calculator__buttons-grid">
+                <li><button class="calculator__button" id="button1">+</button></li>
+                <li><button class="calculator__button" id="button2">*</button></li>
+                <li><button class="calculator__button" id="button3">-</button></li>
+                <li><button class="calculator__button" id="button4">/</button></li>
+            </ul>
+
+            <input type="number" class="calculator__input" placeholder="Введіть число">
+
+            <button class="calculator__equals">=</button>
+
+            <input type="number" class="calculator__input calculator__input--result" placeholder="Результат" readonly>
+            
         </div>
     </div>
 </section>
