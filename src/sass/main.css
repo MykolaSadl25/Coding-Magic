@@ -161,6 +161,79 @@ body {
   visibility: hidden;
 }
 
+.btn_rsp {
+  width: 60px;
+  height: 60px;
+  background-color: #000000;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_rsp:hover {
+  background-color: #8e8e8e;
+}
+
+.icon_rsp {
+  width: 40px;
+  height: 40px;
+  fill: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_rsp {
+  display: flex;
+  gap: 38px;
+  justify-content: center;
+}
+
+.rsp {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  height: 300px;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.rsp h3 {
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.text_rsp {
+  text-align: left;
+  position: absolute;
+  top: 92px;
+  right: 200px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.whowin_p {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.comp_btn {
+  width: 182px;
+  height: 35px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: #000000;
+  color: white;
+}
+
 .time-calc__box {
   display: flex;
   align-items: center;
@@ -312,6 +385,36 @@ body {
 
 .goal.right {
   right: 0;
+}
+
+.biggest_number {
+  background-color: #d7d7d7;
+  width: 135px;
+  height: 35px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+  border: none;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  text-align: center;
+}
+
+.biggest_numbers {
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+.biggest_numbers div {
+  display: flex;
+  gap: 36px;
+}
+
+.the_bigest_number {
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .team {
@@ -523,21 +626,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  visibility: hidden;
 }
 
 .modal1 {
   width: 576px;
   height: 316px;
-  background-color: gray;
+  background-color: #FFFFFF;
   border-radius: 20px;
-  display: none;
-  position: fixed;
-  top: 60px;
+  display: flex;
+  position: absolute;
+  top: 30%;
   padding: 46px 0px;
   font-family: Inter;
   font-size: 12px;
+  visibility: hidden;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .modal_close_btn {
@@ -571,7 +683,7 @@ body {
   color: #7E7E7E;
 }
 
-#modal_icon {
+.modal_icon {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -609,23 +721,61 @@ body {
 .modal2 {
   width: 463px;
   height: 245px;
-  background-color: grey;
+  background-color: #ffffff;
   border-radius: 20px;
-  display: none;
-  position: fixed;
-  top: 20%;
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
-.temperaryOpenBtn2 {
-  width: 50px;
-  height: 50px;
-  background-color: brown;
+.modal2 h3 {
+  font-family: Inter;
+  font-size: 20px;
 }
 
 .modal2_close_btn {
-  width: 50px;
-  height: 50px;
-  background-color: brown;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 15px;
+  height: 15px;
+}
+
+.modal_icon1_2 {
+  top: 69px;
+  left: 43px;
+}
+
+.modal_icon2_2 {
+  top: 145px;
+  left: 87px;
+}
+
+.modal_icon3_2 {
+  top: 69px;
+  left: 391px;
+}
+
+.modal_icon4_2 {
+  top: 145px;
+  left: 347px;
+}
+
+.modal_overlay2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  visibility: hidden;
 }
 
 .footer {
