@@ -25,7 +25,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <script type="module" crossorigin src="/Coding-Magic/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Coding-Magic/assets/index-47ea2455.css">
+    <link rel="stylesheet" href="/Coding-Magic/assets/index-f1b73ae6.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -95,7 +95,7 @@
 <button class="comp_btn">Варіант комп’ютера</button>
 
 </div>
-    <section  id="numbers" class="calculator">
+    <!-- <section  id="numbers" class="calculator">
     <div class="line"></div>
     <div class="container calculator__container">
         <h2 class="calculator__title">Калькулятор</h2>
@@ -110,6 +110,28 @@
             <input type="text" class="calculator__input2" placeholder="Введіть число">
             <button class="calculator__equals">=</button>
             <input type="text" class="calculator__input3" placeholder="Результат">
+        </div>
+    </div>
+</section> -->
+
+<section id="numbers" class="calculator">
+    <div class="container calculator__container">
+        <h2 class="calculator__title">Калькулятор</h2>
+        <div class="calculator__content"> <input type="number" class="calculator__input" placeholder="Введіть число">
+
+            <ul class="calculator__buttons-grid">
+                <li><button class="calculator__button" id="button1">+</button></li>
+                <li><button class="calculator__button" id="button2">*</button></li>
+                <li><button class="calculator__button" id="button3">-</button></li>
+                <li><button class="calculator__button" id="button4">/</button></li>
+            </ul>
+
+            <input type="number" class="calculator__input" placeholder="Введіть число">
+
+            <button class="calculator__equals">=</button>
+
+            <input type="number" class="calculator__input calculator__input--result" placeholder="Результат" readonly>
+            
         </div>
     </div>
 </section>
