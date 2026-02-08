@@ -25,13 +25,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <script type="module" crossorigin src="/Coding-Magic/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Coding-Magic/assets/index-f1b73ae6.css">
+    <link rel="stylesheet" href="/Coding-Magic/assets/index-e5be18ad.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
     
       <section class="year" id="section-1">
+         
     <div class="container year__box">
+       <div class="year__line"></div>
       <h2 class="year__title">Перевір в який рік ти народився</h2>
       <div class="year__content">
         <form class="year__form" action="">
@@ -51,6 +53,7 @@
 
 <section class="quess" id="section-2">
     <div class="quess__container container">
+         <div class="year__line"></div>
         <h2 class="quess__text">Вгадай число, яке загадав комп’ютер (0-10)</h2>
         <div class="quess__box">
             <form class="quess__form">
@@ -63,6 +66,7 @@
             </form>
             <p class="quess__answer" style="display: none;"></p>
         </div>
+        <div class="year__line"></div>
     </div>
 </section>
     <div class="rsp container">
@@ -95,27 +99,11 @@
 <button class="comp_btn">Варіант комп’ютера</button>
 
 </div>
-    <!-- <section  id="numbers" class="calculator">
-    <div class="line"></div>
-    <div class="container calculator__container">
-        <h2 class="calculator__title">Калькулятор</h2>
-        <div class="calculator__div">
-            <input type="text" class="calculator__input1" placeholder="Введіть число">
-            <div class="calculator__button-div">
-                <button class="calculator__button" id="button1">+</button>
-                <button class="calculator__button" id="button2">*</button>
-                <button class="calculator__button" id="button3">-</button>
-                <button class="calculator__button" id="button4">/</button>
-            </div>
-            <input type="text" class="calculator__input2" placeholder="Введіть число">
-            <button class="calculator__equals">=</button>
-            <input type="text" class="calculator__input3" placeholder="Результат">
-        </div>
-    </div>
-</section> -->
+    <section id="numbers" class="calculator">
 
-<section id="numbers" class="calculator">
+
     <div class="container calculator__container">
+        <div class="year__line"></div>
         <h2 class="calculator__title">Калькулятор</h2>
         <div class="calculator__content"> <input type="number" class="calculator__input" placeholder="Введіть число">
 
@@ -125,18 +113,16 @@
                 <li><button class="calculator__button" id="button3">-</button></li>
                 <li><button class="calculator__button" id="button4">/</button></li>
             </ul>
-
             <input type="number" class="calculator__input" placeholder="Введіть число">
-
             <button class="calculator__equals">=</button>
-
             <input type="number" class="calculator__input calculator__input--result" placeholder="Результат" readonly>
-            
         </div>
+        <div class="year__line"></div>
     </div>
 </section>
     <section class="time-calc" id="section-2">
   <div class="container time-calc__box">
+    <div class="year__line"></div>
     <h2 class="time-calc__title">Калькулятор часу</h2>
     <div class="time-calc__content">
       <form action="" class="time-calc__form">
@@ -156,7 +142,8 @@
         >хв.
       </p>
     </div>
-    <div class="time-calc__line"></div>
+    <!-- <div class="time-calc__line"></div> -->
+     <div class="year__line"></div>
   </div>
 </section>
     
