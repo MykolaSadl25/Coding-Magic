@@ -1,0 +1,58 @@
+.site-header {
+  padding-top: 30px;
+  width: 100%;
+  height: 80px;
+}
+
+.header__icon {
+    width: 93px;
+    height: 38.145px;
+    fill: #000;
+}
+
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-left,
+.header-center,
+.header-right {
+  flex: 1;
+  display: flex;
+}
+
+.header-center {
+flex: 7;
+}
+
+.header-right {
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 81px;
+}
+
+.logo-text {
+  line-height: 1;
+}
+
+.nav {
+  display: flex;
+  gap: 50px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #111;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

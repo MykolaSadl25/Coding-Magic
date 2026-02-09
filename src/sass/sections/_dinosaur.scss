@@ -1,0 +1,48 @@
+.dino {
+  &__game {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    border: 2px solid #333;
+    background-color: white;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#dino__dino {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../src/img/dino.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: red;
+  }
+
+  #dino__obstacle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    animation: moveObstacle 2s linear infinite;
+    background-image: url(../src/img/cactus.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+     animation-play-state: paused;
+    background-color: green;
+  }
+
+@keyframes moveObstacle {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: 100%;
+  }
+}
