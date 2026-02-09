@@ -25,11 +25,37 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <script type="module" crossorigin src="/Coding-Magic/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Coding-Magic/assets/index-e5be18ad.css">
+    <link rel="stylesheet" href="/Coding-Magic/assets/index-7d87f893.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
-    
+    <header class="site-header">
+  <div class="container header-box">
+
+    <div class="header-left">
+        <svg class="header-icon">
+            <use href="../img/symbol-defs2.svg#icon-logo"></use>
+        </svg>
+    </div>
+
+    <div class="header-center">
+      <nav class="nav">
+        <a href="#">Інтерактив</a>
+        <a href="#">Наша команда</a>
+        <a href="#">Контакти</a>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <div class="user-area">
+        <button class="theme-toggle">⚙️</button>
+        <span class="user-name">Вітаємо, User!</span>
+      </div>
+    </div>
+
+  </div>
+</header>
+
       <section class="year" id="section-1">
          
     <div class="container year__box">
@@ -146,7 +172,15 @@
      <div class="year__line"></div>
   </div>
 </section>
-    
+    <section class="dino">
+      <div class="container">
+        <div class="dino__game">
+          <div id="dino__dino"></div>
+          <div id="dino__obstacle"></div>
+  </div>
+      </div>
+    </section>
+
     <section class="football">
   <div class="container">
     <h2 class="football__title">Футбол</h2>
