@@ -1,4 +1,4 @@
-@use "../base/variables" as variables;
+@use '../base/variables' as variables;
 
 .team {
   padding-top: 40px;
@@ -12,7 +12,7 @@
     top: 150px;
     left: 3px;
     stroke-width: 1px;
-    stroke:variables.$team-icon-fill;
+    stroke: variables.$team-icon-fill;
     transition: transform 0.2s ease;
     &:active {
       transform: scale(1.2);
@@ -67,6 +67,7 @@
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
+    object-fit: cover;
   }
   &__gallery {
     width: 300px;
@@ -98,28 +99,29 @@
     color: variables.$team-title-col;
   }
 
-  &__desc{
+  &__desc {
     font-family: 'Montserrat Alternates';
-font-weight: 400;
-font-size: 14px;
-color: variables.$team-title-col;
+    font-weight: 400;
+    font-size: 14px;
+    color: variables.$team-title-col;
   }
 
-  &__slider-dots{
+  &__slider-dots {
     display: flex;
-  justify-content: center;
-  gap: 8px;
-  padding: 0;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    padding-top: 20px;
   }
 
-  &__dot{
+  &__dot {
     width: 18px;
-  height: 4px;
-  background-color: #ccc;
-  border-radius: 2px;
+    height: 4px;
+    background-color: #ccc;
+    border-radius: 2px;
   }
 }
-.team__dot.active{
+.team__dot.active {
   width: 30px;
   background-color: #555;
 }

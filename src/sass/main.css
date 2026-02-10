@@ -761,6 +761,8 @@ input::-webkit-inner-spin-button {
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .team__gallery {
   width: 300px;
@@ -799,6 +801,7 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   gap: 8px;
   padding: 0;
+  padding-top: 20px;
 }
 .team__dot {
   width: 18px;
