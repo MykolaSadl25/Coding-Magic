@@ -1,14 +1,19 @@
-body{
-    font-family: "Montserrat Alternates";
+body {
+  font-family: 'Montserrat Alternates';
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1960px auto;
 }
-.line{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    background-color: #000;
-    width: 250px;
-    height: 2px;
-    @media screen and  (min-width:768px) {
-       width: 536px;
-    }
+
+.line {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  background-color: #000;
+  width: 250px;
+  height: 2px;
+  @media screen and (min-width: 768px) {
+    width: 536px;
+  }
 }
