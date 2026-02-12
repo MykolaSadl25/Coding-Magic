@@ -125,6 +125,47 @@ body {
   gap: 12px;
 }
 
+.header-slider {
+  width: 48px;
+  height: 20px;
+  position: relative;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.header-circle {
+  width: 15.033px;
+  height: 14.667px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background-color: white;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+.header-img {
+  width: 15.033px;
+  height: 14.667px;
+}
+
+.active {
+  transform: translateX(20px);
+}
+
+body {
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: gray;
+  color: white;
+}
+
 .year__box {
   display: flex;
   flex-direction: column;
@@ -553,15 +594,25 @@ input::-webkit-inner-spin-button {
   line-height: 20.04px;
 }
 
+.dino {
+  padding-top: 30px;
+}
 .dino__game {
   position: relative;
   width: 600px;
   height: 200px;
-  border: 2px solid #333;
+  border: 2px solid lightgray;
   background-color: #fff;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+}
+.dino__title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #dino__dino {
@@ -570,7 +621,7 @@ input::-webkit-inner-spin-button {
   left: 50px;
   width: 70px;
   height: 70px;
-  background-image: url(./src/img/dino.webp);
+  background-image: url(../img/dino.webp);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -582,7 +633,7 @@ input::-webkit-inner-spin-button {
   width: 60px;
   height: 60px;
   animation: moveObstacle 2s linear infinite;
-  background-image: url(./src/img/cactus.png);
+  background-image: url(../img/cactus.png);
   background-size: contain;
   background-repeat: no-repeat;
   animation-play-state: paused;

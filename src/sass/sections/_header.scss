@@ -57,3 +57,43 @@
   gap: 12px;
 }
 
+.header-slider {
+  width: 48px;
+  height: 20px;
+  position: relative;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.header-circle {
+  width: 15.033px;
+  height: 14.667px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background-color: white;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+.header-img {
+  width: 15.033px;
+  height: 14.667px;
+}
+
+.active {
+  transform: translateX(20px);
+}
+
+body {
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: gray;
+  color: white;
+}
