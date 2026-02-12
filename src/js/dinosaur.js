@@ -1,10 +1,10 @@
+const arena = document.querySelector('.dino__game');
 const dino = document.getElementById('dino__dino');
 const obstacle = document.getElementById('dino__obstacle');
 
 let isJumping = false;
 let gameStarted = false;
 let collisionCheck = null;
-
 
 function startGame() {
   if (!gameStarted) {
@@ -16,7 +16,9 @@ function startGame() {
   if (!isJumping) jump();
 }
 
-document.addEventListener('click', startGame);
+
+arena.addEventListener('click', startGame);
+
 
 document.addEventListener('keydown', (e) => {
   if (e.code === 'Space') startGame();
@@ -49,7 +51,6 @@ function jump() {
     }
   }, 20);
 }
-
 
 function startCollision() {
   collisionCheck = setInterval(() => {

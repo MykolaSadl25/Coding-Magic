@@ -1,39 +1,48 @@
 .dino {
+  padding-top: 30px;
   &__game {
     position: relative;
     width: 600px;
     height: 200px;
-    border: 2px solid #333;
+    border: 2px solid lightgray;
     background-color: #fff;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
   }
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 #dino__dino {
-    position: absolute;
-    bottom: 0;
-    left: 50px;
-    width: 70px;
-    height: 70px;
-    background-image: url(./src/img/dino.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 70px;
+  height: 70px;
+  background-image: url(../img/dino.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-  #dino__obstacle {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    animation: moveObstacle 2s linear infinite;
-    background-image: url(./src/img/cactus.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-     animation-play-state: paused;
-  }
+#dino__obstacle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  animation: moveObstacle 2s linear infinite;
+  background-image: url(../img/cactus.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-play-state: paused;
+}
 
 @keyframes moveObstacle {
   from {
@@ -44,4 +53,3 @@
     right: 100%;
   }
 }
-
