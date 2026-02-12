@@ -46,8 +46,8 @@ btnLeftRef.addEventListener("click", () => {
 function moveSlider() {
   const update = -index * 100;
   listRef.style.transform = `translateX(${update}%)`;
-  dotsRef.forEach(dot => dot.classList.remove("active"));
+  dotsRef.forEach(dot => dot.classList.remove("activeDot"));
   if(dotsRef[index]) {
-    dotsRef[index].classList.add("active");
+    dotsRef[index].classList.add("activeDot");
   }
 }

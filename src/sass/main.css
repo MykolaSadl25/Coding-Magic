@@ -864,7 +864,7 @@ input::-webkit-inner-spin-button {
   border-radius: 2px;
 }
 
-.team__dot.active {
+.team__dot.activeDot {
   width: 30px;
   background-color: #555;
 }
